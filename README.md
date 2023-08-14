@@ -9,4 +9,4 @@ This is SkyTracker's web UI:
 ![desktop2](/image/desktop2.png)
 
 For the architecture of our implementation, you can see the diagram below:
-*(will add later)*
+![diagram](./image/diagram.png)
