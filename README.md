@@ -1,1 +1,3 @@
 # sky-tracker
+a web application for aws cloud training's project
+to be continued...
