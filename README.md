@@ -1,1 +1,1 @@
-# sky-tracker
+![demo](./image/desktop2.png)
