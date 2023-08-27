@@ -1,0 +1,33 @@
+:root {
+    --theme-1: #7C76BB;
+    --theme-2: #6F42C1;
+    --theme-3: #FF87B0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: #7C76BB;
+    border-bottom: 5px solid #7C76BB;
+    margin-bottom: 35px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group-wrapper {
+    background-color: rgba(124, 118, 187, 0.15);
+}
+
+.heading {
+    color: red;
+}

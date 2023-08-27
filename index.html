@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    
+    <div class="main">
+
+        <div class="header"></div>
+
+        <div class="wrapper">
+            <form action="" method="POST" class="form" id="form-1">
+
+                <h3 class="desc">Enter your information</h3>
+
+                <div class="spacer"></div>
+
+                <div class="form-group-wrapper">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Ex: Quoc An" />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" class="form-label">Date of birth</label>
+                        <input id="date" name="date" type="text" placeholder="Ex: 30/02/2077" />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time" class="form-label">Time of birth</label>
+                        <input id="time" name="time" type="text" placeholder="Ex: 9 A.M" />
+                        <span class="form-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="place" class="form-label">Place of birth</label>
+                        <input id="place" name="place" type="text" placeholder="Ex: Void" />
+                        <span class="form-message"></span>
+                    </div>
+                </div>
+
+                <button class="form-clear">Reset</button>
+
+                <button class="form-submit">Explore</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
