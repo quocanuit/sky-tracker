@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Sarabun:wght@300;400;700&display=swap"
+    >
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -11,44 +16,50 @@
 
         <div class="header"></div>
 
-        <div class="wrapper">
-            <form action="" method="POST" class="form" id="form-1">
+        <div class="content">
+            
+            <p class="page-title">
+                <span id="page-title-head">Enter your</span>
+                <span id="page-title-tail">information </span>
+            </p>
 
-                <h3 class="desc">Enter your information</h3>
+            <div class="wrapper">
+                <form action="" method="POST" class="form" id="form-1">
 
-                <div class="spacer"></div>
+                    <div class="form-group-wrapper">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input class="form-input" id="name" name="name" type="text" placeholder="" />
+                            <span class="form-message"></span>
+                        </div>
 
-                <div class="form-group-wrapper">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Name</label>
-                        <input id="name" name="name" type="text" placeholder="Ex: Quoc An" />
-                        <span class="form-message"></span>
-                    </div>
+                        <div class="form-group">
+                            <label for="date" class="form-label">Date of birth</label>
+                            <input class="form-input" id="date" name="date" type="text" placeholder="" />
+                            <span class="form-message"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="date" class="form-label">Date of birth</label>
-                        <input id="date" name="date" type="text" placeholder="Ex: 30/02/2077" />
-                        <span class="form-message"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="time" class="form-label">Time of birth</label>
-                        <input id="time" name="time" type="text" placeholder="Ex: 9 A.M" />
-                        <span class="form-message"></span>
+                        <div class="form-group">
+                            <label for="time" class="form-label">Time of birth</label>
+                            <input class="form-input" id="time" name="time" type="text" placeholder="" />
+                            <span class="form-message"></span>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="place" class="form-label">Place of birth</label>
+                            <input class="form-input" id="place" name="place" type="text" placeholder="" />
+                            <span class="form-message"></span>
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="place" class="form-label">Place of birth</label>
-                        <input id="place" name="place" type="text" placeholder="Ex: Void" />
-                        <span class="form-message"></span>
+                    <div class="form-btn-wrapper">
+                        <button class="form-btn" id="form-btn-clear">Reset</button>
+                        <button class="form-btn" id="form-btn-submit">Explore</button>
                     </div>
-                </div>
 
-                <button class="form-clear">Reset</button>
-
-                <button class="form-submit">Explore</button>
-
-            </form>
+                </form>
+            </div>
+            
         </div>
 
     </div>
