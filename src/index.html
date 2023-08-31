@@ -22,7 +22,7 @@
         </p>
 
         <div class="wrapper">
-            <form action="" method="POST" class="form" id="form-1">
+            <form name="Form" onsubmit="return false" action="" method="POST" class="form" id="form-1">
                 <div class="form-group-wrapper">
                     <div class="form-group">
                         <label for="name" class="form-label">Name</label>
@@ -32,33 +32,25 @@
                             name="name"
                             type="text"
                             placeholder="Ex: Mycar Jakson"
-                            required
                         />
                         <span class="form-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="date" class="form-label">Date of birth</label>
-                        <input class="form-input" id="date" name="date" type="date" placeholder="" required />
+                        <input class="form-input" id="date" name="date" type="date" placeholder="" />
                         <span class="form-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="time" class="form-label">Time of birth</label>
-                        <input class="form-input" id="time" name="time" type="time" placeholder="" required />
+                        <input class="form-input" id="time" name="time" type="time" placeholder="" />
                         <span class="form-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="place" class="form-label">Place of birth</label>
-                        <input
-                            class="form-input"
-                            id="place"
-                            name="place"
-                            type="text"
-                            placeholder="Ex: Cali"
-                            required
-                        />
+                        <input class="form-input" id="place" name="place" type="text" placeholder="Ex: Cali" />
                         <span class="form-message"></span>
                     </div>
                 </div>
@@ -70,9 +62,8 @@
                         id="form-btn-submit"
                         type="submit"
                         value="Explore"
-                        onclick="returnResult()"
+                        onclick="callAPI(document.getElementById('name').value, document.getElementById('place').value)"
                     />
-                    <!-- <button class="form-btn" id="form-btn-submit">Explore</button> -->
                 </div>
             </form>
         </div>
