@@ -1,10 +1,7 @@
-var callAPI = (name, place) => {
+var callAPI = (name, date, time, place) => {
     //validate form
-    var a = document.forms["Form"]["name"].value;
-    var b = document.forms["Form"]["date"].value;
-    var c = document.forms["Form"]["time"].value;
-    var d = document.forms["Form"]["place"].value;
-    if ((a == null || a == "") || (b == null || b == "") || (c == null || c == "") || (d == null || d == "")) {
+    if ((name == null || name == "") || (date == null || date == "") ||
+    (time == null || time == "") || (place == null || place == "")) {
       alert("Please Fill In All Required Fields");
       return false;
     }
@@ -12,7 +9,7 @@ var callAPI = (name, place) => {
     //call API
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    var raw = JSON.stringify({ "name": name, "place": place });
+    var raw = JSON.stringify({ "name": name, "date": date, "time": time, "place": place });
     var requestOptions = {
         method: 'POST',
         headers: myHeaders,
@@ -22,6 +19,21 @@ var callAPI = (name, place) => {
 
     fetch("https://66m5bteg6d.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
     .then(response => response.text())
-    .then(result => document.getElementById('user-result').innerHTML += JSON.parse(result).body)
+    .then(result => displayResult(result))
     .catch(error => console.log('error', error));
+}
+
+var displayResult = (result) => {
+    var e = JSON.parse(result);
+    document.getElementById('user-result').innerHTML += `
+    <h2 class="user-greeting" id="to-scroll">Hello ${e.name}, your Zodiac is ${e.zodiac}</h2>
+    <h3 class="user-aspects">Appearance & Health</h3>
+    <h3 class="user-aspects">Character</h3>
+    <h3 class="user-aspects">Career</h3>
+    <h3 class="user-aspects">Relationship</h3>
+    <h3 class="user-aspects">Suitable works</h3>
+    <h3 class="user-aspects">Suitable partners</h3>
+    `
+    const element = document.getElementById("to-scroll");
+    element.scrollIntoView({ behavior: "smooth", inline: "nearest" });
 }

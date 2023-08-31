@@ -105,6 +105,16 @@
 }
 
 #user-result {
-    margin: 40px 30px;
+    margin: 40px 50px;
     font-family: 'Outfit', sans-serif;
+}
+
+.user-greeting {
+    color: #FF87B0;
+}
+
+.user-aspects {
+    font-size: 25px;
+    color: var(--theme-1);
+    padding: 10px 0px;
 }
