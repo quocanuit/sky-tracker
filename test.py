@@ -1,20 +1,25 @@
 # userResult = 'Xin chao {}, sinh o {}'.format(event['name'], event['place'])
+from test2 import aah
 
-d1 = '2023-12-22'
+d1 = '2023-1-10'
 
 a = d1.split("-")
 day = int(a[2])
 month = int(a[1])
+dateFixed = a[2] + '/' + a[1] + '/' + a[0]
 
 hsign = ['Capricornus', 'Aquarius', 'Pisces', 'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpius', 'Sagittarius']
 
 zodiac = ''
+appearance = ''
 
 if month == 1:
     if day <= 19:
         zodiac = hsign[0]
+        appearance = aah[0]
     else:
         zodiac = hsign[1]
+        appearance = aah[1]
         
 elif month == 2:
     if day <= 18:
@@ -82,4 +87,4 @@ elif month == 12:
     else:
         zodiac = hsign[0]
 
-print(zodiac)
+print(appearance)

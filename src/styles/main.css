@@ -113,6 +113,12 @@
     color: #FF87B0;
 }
 
+.user-greeting-sub {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
 .user-aspects {
     font-size: 25px;
     color: var(--theme-1);

@@ -25,9 +25,11 @@ var callAPI = (name, date, time, place) => {
 
 var displayResult = (result) => {
     var e = JSON.parse(result);
-    document.getElementById('user-result').innerHTML += `
-    <h2 class="user-greeting" id="to-scroll">Hello ${e.name}, your Zodiac is ${e.zodiac}</h2>
+    document.getElementById('user-result').innerHTML = `
+    <h2 class="user-greeting" id="to-scroll">Hello ${e.name}, your Zodiac is ${e.zodiac}!</h2>
+    <h4 class="user-greeting-sub">Birthday: ${e.time} ${e.date}, in ${e.place}.</h4>
     <h3 class="user-aspects">Appearance & Health</h3>
+    <p>${e.appearance}</p>
     <h3 class="user-aspects">Character</h3>
     <h3 class="user-aspects">Career</h3>
     <h3 class="user-aspects">Relationship</h3>
