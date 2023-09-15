@@ -1,36 +1,38 @@
 *,
 *:before,
-*:after{
+*:after {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
-img{
-    max-width: 100%;
-    width: 100%;
-}
-
-.header{
+.header {
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    align-items: center;
+    height: 70px;
     font-family: 'Lexend', sans-serif;
     font-family: 'Outfit', sans-serif;
     color: #7C76BB;
-    border-bottom: 5px solid #7C76BB;
-    margin-bottom: 35px;
+    margin: 35px 0px;
 }
 
-
-h2{
-    margin-left: 70px;
+#web-name {
+    margin-left: 100px;
     font-size: 30px;
-    text-shadow: 2px 2px #cec9ca;
-
+    /* text-shadow: 2px 2px #cec9ca; */
 }
 
-a{
+#web-name:hover {
+    cursor: pointer;
+}
+
+.nav-bar {
+    position: absolute;
+    display: flex;
+    right: 120px;
+}
+
+.navbar-options {
     position: relative;
     right: 0px;
     text-decoration: none;
@@ -38,18 +40,16 @@ a{
     font-size: 20px;
     margin-left: 70px;
     margin-top: 7px;
-}
-.nav-bar{
-    position: absolute;
-    display: flex;
-    right: 120px;
+    color: #7C76BB;
 }
 
-.nav-bar a:hover{
+.navbar-options:hover {
     color: #FF87B0;
+    transition: all;
+    transition-duration: 200ms;
 }
 
-#sign-up-button{
+#sign-up-button {
     position: relative;
     margin-left: 70px;
     font-size: 20px;
@@ -63,15 +63,29 @@ a{
     border-radius: 5px;
 }
 
-.content{
+#sign-up-button:hover {
+    background-color: white;
+    border-color: #7C76BB;
+    color: #7C76BB;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+#pic {
+    max-width: 100%;
+    width: 100%;
+}
+
+.content {
     display: flex;
 }
 
-.content-text{
+.content-text {
     padding: 100px;
 }
 
-#main-content{
+#main-content {
     font-family: 'Lexend', sans-serif;
     font-family: 'Outfit', sans-serif;
     font-family: 'Sarabun', sans-serif;
@@ -79,23 +93,23 @@ a{
     width: 70%;
 }
 
-#sub-content{
+#sub-content {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     width: 40%;
 }
 
-.content-pic{
+.content-pic {
     position: absolute;
     right: 120px;
     width: 35%;
 }
 
-ul{
+ul {
     margin-bottom: 20px;
 }
 
-#lets-start-button{
+#lets-start-button {
     font-family: 'Lexend', sans-serif;
     font-family: 'Outfit', sans-serif;  
     font-size: 20px;
@@ -104,4 +118,25 @@ ul{
     color:#7C76BB;
     border: 1px solid #7C76BB;
     border-radius: 6px;
+    padding: 5px;
 }
+
+#lets-start-button:hover {
+    color: white;
+    background-color: #7C76BB;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+/* old header */
+/* .header {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    color: #7C76BB;
+    border-bottom: 5px solid #7C76BB;
+    margin: 35px 0px;
+} */
