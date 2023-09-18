@@ -12,12 +12,71 @@
 
 .header {
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    align-items: center;
+    height: 70px;
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Outfit', sans-serif;
     color: #7C76BB;
-    border-bottom: 5px solid #7C76BB;
-    margin-bottom: 35px;
+    margin: 35px 0px;
 }
+
+#web-name {
+    margin-left: 100px;
+    font-size: 30px;
+    /* text-shadow: 2px 2px #cec9ca; */
+}
+
+#web-name:hover {
+    cursor: pointer;
+}
+
+.nav-bar {
+    position: absolute;
+    display: flex;
+    right: 120px;
+}
+
+.navbar-options {
+    position: relative;
+    right: 0px;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 7px;
+    color: #7C76BB;
+}
+
+.navbar-options:hover {
+    color: #FF87B0;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+#sign-up-button {
+    position: relative;
+    margin-left: 70px;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    height: 40px;
+    width: 100px;
+    background-color: #7C76BB;
+    color: white;
+    border: 1px solid #7C76BB;
+    border-radius: 5px;
+}
+
+#sign-up-button:hover {
+    background-color: white;
+    border-color: #7C76BB;
+    color: #7C76BB;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+/* //////////////////// spacer //////////////////// */
 
 .content {
     display: flex;
