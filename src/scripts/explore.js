@@ -34,10 +34,15 @@ var displayResult = (result) => {
     <h3 class="user-aspects">Appearance & Health</h3>
     <p>${e.appearance}</p>
     <h3 class="user-aspects">Character</h3>
+    <p>${e.character}</p>
     <h3 class="user-aspects">Career</h3>
+    <p>${e.career}</p>
     <h3 class="user-aspects">Relationship</h3>
+    <p>${e.relationship}</p>
     <h3 class="user-aspects">Suitable works</h3>
+    <p>${e.suworks}</p>
     <h3 class="user-aspects">Suitable partners</h3>
+    <p>${e.supns}</p>
     `
 
     const element = document.getElementById("to-scroll");
